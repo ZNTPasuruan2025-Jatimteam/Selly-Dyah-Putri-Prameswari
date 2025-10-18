@@ -12,9 +12,17 @@ function categories_Selly_3(feature, value, size, resolution, labelText,
                               bufferWidth)
     })];
                     break;
-case '25':
+case '25.1':
                     return [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(169,169,169,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 0.988}),fill: new ol.style.Fill({color: 'rgba(0,230,246,0.30196078431372547)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(169,169,169,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 0.988}),fill: new ol.style.Fill({color: 'rgba(0,211,248,0.30196078431372547)'}),
+        text: createTextStyle(feature, resolution, labelText, labelFont,
+                              labelFill, placement, bufferColor,
+                              bufferWidth)
+    })];
+                    break;
+case '25.2':
+                    return [ new ol.style.Style({
+        stroke: new ol.style.Stroke({color: 'rgba(169,169,169,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 0.988}),fill: new ol.style.Fill({color: 'rgba(1,255,65,0.30196078431372547)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
@@ -22,7 +30,7 @@ case '25':
                     break;
 case '52':
                     return [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(169,169,169,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 0.988}),fill: new ol.style.Fill({color: 'rgba(87,250,0,0.30196078431372547)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(169,169,169,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 0.988}),fill: new ol.style.Fill({color: 'rgba(230,255,1,0.30196078431372547)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
@@ -30,7 +38,7 @@ case '52':
                     break;
 case '71':
                     return [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(169,169,169,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 0.988}),fill: new ol.style.Fill({color: 'rgba(255,166,1,0.30196078431372547)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(169,169,169,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 0.988}),fill: new ol.style.Fill({color: 'rgba(255,85,1,0.30196078431372547)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
@@ -38,15 +46,7 @@ case '71':
                     break;
 case '84':
                     return [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(169,169,169,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 0.988}),fill: new ol.style.Fill({color: 'rgba(254,0,113,0.30196078431372547)'}),
-        text: createTextStyle(feature, resolution, labelText, labelFont,
-                              labelFill, placement, bufferColor,
-                              bufferWidth)
-    })];
-                    break;
-default:
-                    return [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(169,169,169,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 0.988}),fill: new ol.style.Fill({color: 'rgba(170,0,255,0.30196078431372547)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(169,169,169,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 0.988}),fill: new ol.style.Fill({color: 'rgba(255,1,171,0.30196078431372547)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
@@ -60,7 +60,7 @@ var style_Selly_3 = function(feature, resolution){
     };
     
     var labelText = ""; 
-    var value = feature.get("NOZN");
+    var value = feature.get("NOZN.2");
     var labelFont = "10px, sans-serif";
     var labelFill = "#000000";
     var bufferColor = "";
